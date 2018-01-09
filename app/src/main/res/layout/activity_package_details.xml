@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.jwsdigital.poa.activity.PackageDetailsActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_view"
+                android:queryHint="Your Location"
+                android:searchIcon="@drawable/maker"
+                android:searchHintIcon="@drawable/maker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="lollipop_mr1"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/l_margin"
+            android:background="@drawable/rtgbacgrounds"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="@dimen/l_padding"
+                android:layout_gravity="center"
+                android:src="@drawable/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.jwsdigital.lib_fonts.CustomeEditTextView
+                android:layout_marginRight="@dimen/l_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:hint="Address"
+                tools:ignore="RtlHardcoded"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

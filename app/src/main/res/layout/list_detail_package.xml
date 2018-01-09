@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    card_view:layout_marginBottom="@dimen/l_padding">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/l_margin"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/bs"
+                app:civ_border_color="#fafafa"
+                app:civ_border_width="2dp"/>
+            <LinearLayout
+                android:layout_marginLeft="@dimen/l_margin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/l_padding"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.jwsdigital.lib_fonts.CustomeTextView
+                        android:text="Dog Grooming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <com.jwsdigital.lib_fonts.CustomeTextView
+                        android:layout_marginLeft="@dimen/l_padding"
+                        android:textColor="@color/color_Primary"
+                        android:text="Start From"
+                        android:textSize="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <com.jwsdigital.lib_fonts.CustomeTextView
+                        android:textColor="@color/color_Primary"
+                        android:gravity="center"
+                        android:text="Rp 50.000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="@dimen/l_padding"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.jwsdigital.lib_fonts.CustomeTextView
+                        android:textSize="12dp"
+                        android:text="by"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <com.jwsdigital.lib_fonts.CustomeTextView
+                        android:layout_marginLeft="@dimen/l_margin"
+                        android:text="Pompom Pet Grooming"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

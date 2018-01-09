@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/l_padding"
+    android:background="@color/color_Primary"
+    tools:context="com.jwsdigital.poa.activity.LoginActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="20dp"
+       tools:ignore="UselessParent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:textColor="@color/bg_form"
+               android:padding="@dimen/l_padding"
+               android:gravity="center"
+               android:text="LOGIN"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <com.jwsdigital.lib_fonts.CustomeEditTextView
+                   android:id="@+id/username"
+                   android:background="@drawable/rtgbacgrounds"
+                   android:layout_margin="@dimen/t_margin"
+                   android:layout_width="match_parent"
+                   android:padding="@dimen/t_margin"
+                   android:textColorHint="@color/colorPrimaryDark"
+                   android:hint="@string/username_email"
+                   android:drawableLeft="@drawable/arrows"
+                   android:layout_height="@dimen/form_height"
+                   tools:ignore="RtlHardcoded,TextFields"/>
+           </android.support.design.widget.TextInputLayout>
+           <android.support.design.widget.TextInputLayout
+               android:layout_marginTop="@dimen/l_padding"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+           <com.jwsdigital.lib_fonts.CustomeEditTextView
+               android:id="@+id/password"
+               android:background="@drawable/rtgbacgrounds"
+               android:layout_margin="@dimen/t_margin"
+               android:hint="@string/password"
+               android:drawableLeft="@drawable/arrows"
+               android:padding="@dimen/t_margin"
+               android:drawableRight="@drawable/pass_des"
+               android:textColorHint="@color/colorPrimaryDark"
+               android:layout_width="match_parent"
+               android:inputType="textPassword"
+               android:layout_height="@dimen/form_height"
+               tools:ignore="RtlHardcoded"/>
+        </android.support.design.widget.TextInputLayout>
+           <com.jwsdigital.lib_fonts.CustomeButtonView
+               android:id="@+id/login"
+               android:layout_marginTop="@dimen/t_margin"
+               android:text="LOGIN"
+               android:background="@drawable/rtgbacgrounds"
+               android:layout_marginLeft="@dimen/l_margin"
+               android:layout_marginRight="@dimen/r_margin"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/form_height"
+               tools:ignore="HardcodedText,RtlHardcoded"/>
+
+           <com.jwsdigital.lib_fonts.CustomeTextView
+               android:layout_marginTop="@dimen/t_margin"
+               android:text="Forgot Password"
+               android:textSize="16dp"
+               android:textColor="@color/bg_form"
+               android:padding="@dimen/l_padding"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+           <com.jwsdigital.lib_fonts.CustomeTextView
+               android:id="@+id/onRegisterForm"
+               android:layout_marginTop="@dimen/t_margin"
+               android:text="Don't Have an Account ? Register"
+               android:textSize="18dp"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:textColor="@color/bg_form"
+               android:padding="@dimen/l_padding"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <com.jwsdigital.lib_fonts.CustomeTextView
+               android:text="or"
+               android:textSize="14dp"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:textColor="@color/bg_form"
+               android:padding="@dimen/l_padding"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+           <LinearLayout
+               android:id="@+id/LoginFB"
+               android:background="@color/fb_color"
+               android:layout_width="match_parent"
+               android:gravity="center|left"
+               android:orientation="horizontal"
+               android:layout_marginBottom="@dimen/l_padding"
+               android:layout_height="@dimen/form_height">
+               <ImageView
+                   android:src="@drawable/fb"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <View
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="@dimen/r_margin"
+                   android:background="#141c59"
+                   android:layout_width="1dp"
+                   android:layout_height="35dp" />
+               <!--<com.jwsdigital.lib_fonts.CustomeTextView-->
+                   <!--android:textSize="18dp"-->
+                   <!--android:textStyle="bold"-->
+                   <!--android:gravity="center"-->
+                   <!--android:textColor="@color/bg_form"-->
+                   <!--android:text="Login With Facebook"-->
+                   <!--android:layout_width="match_parent"-->
+                   <!--android:layout_height="wrap_content"/>-->
+
+               <com.facebook.login.widget.LoginButton
+                   android:id="@+id/login_button"
+                   android:background="@color/fb_color"
+                   android:layout_width="match_parent"
+                   android:textStyle="bold"
+                   android:layout_height="wrap_content"
+                   android:text="Login With Facebook"
+                   android:textColor="@color/bg_form"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/LoginGOOGLE"
+               android:background="@color/g_plus"
+               android:layout_width="match_parent"
+               android:gravity="center|left"
+               android:orientation="horizontal"
+               android:padding="@dimen/l_padding"
+               android:layout_marginTop="@dimen/l_padding"
+               android:layout_height="@dimen/form_height">
+               <ImageView
+                   android:src="@drawable/gplus"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+               <View
+                   android:layout_marginLeft="@dimen/l_margin"
+                   android:layout_marginRight="@dimen/r_margin"
+                   android:background="#7b7b7e"
+                   android:layout_width="1dp"
+                   android:layout_height="35dp" />
+               <com.jwsdigital.lib_fonts.CustomeTextView
+                   android:textSize="18dp"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:textColor="@color/bg_form"
+                   android:text="Login With Google"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"/>
+           </LinearLayout>
+        <com.jwsdigital.lib_fonts.CustomeTextView
+            android:gravity="center"
+            android:layout_marginTop="@dimen/t_margin"
+            android:padding="@dimen/b_margin"
+            android:textAlignment="center"
+            android:textColor="@color/bg_form"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="List Your Company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

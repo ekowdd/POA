@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">POA</string>
+    <string name="password">Password</string>
+    <string name="username_email">Username/Email</string>
+    <string name="title_activity_main">POA</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">1484603381630511</string>
+    <string name="fb_login_protocol_scheme">fb1484603381630511</string>
+    <string name="maps_api">AIzaSyBBsM8zVR6jaD4Y5E-sWN3ZtUMZ6UT6xqg</string>
+    <string name="search_hint">Search</string>
+</resources>

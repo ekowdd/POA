@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardUseCompatPadding="true"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:padding="@dimen/l_margin"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bs"
+            app:civ_border_color="#fafafa"
+            app:civ_border_width="2dp"/>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/l_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/l_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.jwsdigital.lib_fonts.CustomeTextView
+                    android:text="Grooming Anjing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.jwsdigital.lib_fonts.CustomeTextView
+                    android:layout_marginLeft="@dimen/l_padding"
+                    android:gravity="center|right"
+                    android:textColor="@color/color_Primary"
+                    android:text="Rp 50.000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <com.jwsdigital.lib_fonts.CustomeTextView
+                android:text="Ras Kecil - Pom Shitzu"
+                android:textSize="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.jwsdigital.lib_fonts.CustomeTextView
+                android:text="by Pompom Pet Grooming"
+                android:textSize="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
